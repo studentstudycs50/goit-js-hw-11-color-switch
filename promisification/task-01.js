@@ -23,3 +23,29 @@ delay(1500).then(logger); // Resolved after 1500ms
 
 
 
+
+
+//=========================EXAMPLES=====================
+// let randomNum = Math.floor(Math.random() * (10 - 1) + 1);
+
+// const myPromise = new Promise((resolve, reject) => { 
+//   if (randomNum < 5) {
+//     resolve('success')
+//   }
+//   else {
+//      reject('error')
+//   }
+
+// })
+
+// myPromise.then((result) => console.log(result))
+//   .catch((err) => { console.log(err);})
+
+
+// myPromise.then((result) => {
+//   console.log(result);
+// })
+// myPromise.catch((err) => {
+//   console.log(err);
+// })
+
