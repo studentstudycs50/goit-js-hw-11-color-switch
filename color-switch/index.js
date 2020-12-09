@@ -7,8 +7,6 @@ const colors = [
   '#795548',
 ];
 
-
-
 const randomIntegerFromInterval = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1) + min);
 };
@@ -19,7 +17,7 @@ const refs = {
 };
 
 const colorSwitcher = {
-  isActiveBut: false,
+ // isActiveBut: false,
   startChange() {
     if (this.isActiveBut) {
       return;
@@ -27,13 +25,13 @@ const colorSwitcher = {
     this.isActiveBut = true;
     const min = 0;
     const max = colors.length - 1;
-    this.interval = setInterval(() => {
+    interval = setInterval(() => {
       document.body.style.background =
         colors[randomIntegerFromInterval(min, max)];
     }, 1000);
   },
   stopChange() {
-    clearInterval(this.interval);
+    clearInterval(interval);
     this.isActiveBut = false;
   },
 };
