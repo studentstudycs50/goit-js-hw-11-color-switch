@@ -17,7 +17,7 @@ const refs = {
 };
 
 const colorSwitcher = {
- // isActiveBut: false,
+ 
   startChange() {
     if (this.isActiveBut) {
       return;
